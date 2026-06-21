@@ -11,7 +11,7 @@ class Solution {
 
     const freq = {};
 
-    // Conta as letras de s
+    
     for (let i = 0; i < s.length; i++) {
         const char = s[i];
         if (freq[char] === undefined) {
@@ -21,11 +21,11 @@ class Solution {
         }
     }
 
-    // Subtrai as letras de t
+    
     for (let i = 0; i < t.length; i++) {
         const char = t[i];
         if (freq[char] === undefined || freq[char] === 0) {
-            return false; // letra não existe em s, ou já gastámos todas
+            return false; 
         }
         freq[char] = freq[char] - 1;
     }
